@@ -2,16 +2,22 @@
   {
     "city": "Philadelphia",
     "state": "PA",
-    "visited": true
+    "visited": true,
+    "lat": "39.952583",
+    "lon": "-75.165222"
   },
   {
     "city": "Ocean City",
     "state": "NJ",
-    "visited": true
+    "visited": true,
+    "lat": "39.2776156",
+    "lon": "-74.5746001"
   },
   {
     "city": "New York City",
     "state": "NY",
-    "visited": true
+    "visited": true,
+    "lat": "40.730610",
+    "lon": "-73.935242"
   }
 ]
