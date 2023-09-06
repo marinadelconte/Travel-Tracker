@@ -30,12 +30,12 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-// no project to get/ commenting out for now may remove later - cyndi
 
+// get location by id/ doesnt work/ commenting out and will remove if not needed- cyndi
 
-// router.get('/project/:id', async (req, res) => {
+// router.get('/location/:id', async (req, res) => {
 //   try {
-//     const projectData = await Project.findByPk(req.params.id, {
+//     const locationData = await Location.findByPk(req.params.id, {
 //       include: [
 //         {
 //           model: User,
@@ -44,10 +44,10 @@ router.get('/', async (req, res) => {
 //       ],
 //     });
 
-//     const project = projectData.get({ plain: true });
+//     const location = locationData.get({ plain: true });
 
-//     res.render('project', {
-//       ...project,
+//     res.render('profile', {
+//       ...location,
 //       logged_in: req.session.logged_in
 //     });
 //   } catch (err) {
@@ -64,7 +64,6 @@ router.get('/profile', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       include: [{ model: Location }],
     });
-    console.log("here")
     const user = userData.get({ plain: true });
 
     res.render('profile', {
