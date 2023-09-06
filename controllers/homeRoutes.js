@@ -1,6 +1,8 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Location, User } = require('../models');
 const withAuth = require('../utils/auth');
+
+//update project to location - MD
 
 router.get('/', async (req, res) => {
   try {
