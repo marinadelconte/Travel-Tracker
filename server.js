@@ -15,9 +15,9 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: 'Super secret secret', // todo 
   cookie: {
-    maxAge: 300000,
+    maxAge: 30000000000,
     httpOnly: true,
     secure: false,
     sameSite: 'strict',
