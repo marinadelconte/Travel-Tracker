@@ -18,8 +18,10 @@ router.get('/', async (req, res) => {
 
     // Serialize data so the template can read it
     const locations = locationData.map((location) => location.get({ plain: true }));
-
+    // const locations = location.get({ plain: true })
+    console.log(locations)
     // Pass serialized data and session flag into template
+
     res.render('homepage', { 
       locations, 
       logged_in: req.session.logged_in 
