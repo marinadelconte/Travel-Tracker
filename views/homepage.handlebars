@@ -1,18 +1,5 @@
-<!-- Loop over each object in the projects array -->
-{{#each locations as |location| }}
-<div class="row mb-4 location">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      
-      <a href="/location/{{location.id}}">{{location.name}}</a>
-    </h2>
-    <p>Created by {{location.user.name}} on {{format_date location.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{location.description}}
-    </p>
-  </div>
+<div>
+     <h2>Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of future travel plans - all on one interactive map!</h2>
 </div>
-{{/each}}
+    
+<script src="./js/login.js"></script>
