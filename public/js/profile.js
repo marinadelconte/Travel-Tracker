@@ -36,6 +36,18 @@ const delButtonHandler = async (event) => {
   }
 };
 
+const addLocationBtn = async () => {
+  const response = await fetch('/profile', {
+    method: 'GET'
+  });
+  if (response.ok) {
+    document.location.replace('/profile');
+  } else {
+    alert(response.statusText);
+  }
+};
+document.querySelector('#addLocation').addEventListener('click', addLocationBtn);
+
 document
   .querySelector('.new-location-form')
   .addEventListener('submit', newFormHandler);
