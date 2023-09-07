@@ -1,5 +1,6 @@
 [
   {
+    "user_id": 1,
     "city": "Philadelphia",
     "state": "PA",
     "visited": true,
@@ -7,11 +8,33 @@
     "lon": "-75.165222"
   },
   {
+    "user_id": 1,
     "city": "Ocean City",
     "state": "NJ",
     "visited": true,
     "lat": "39.2776156",
     "lon": "-74.5746001"
+  },
+  {
+    "city": "New York City",
+    "state": "NY",
+    "visited": true,
+    "lat": "40.730610",
+    "lon": "-73.935242"
+  },
+  {
+    "city": "New York City",
+    "state": "NY",
+    "visited": true,
+    "lat": "40.730610",
+    "lon": "-73.935242"
+  },
+  {
+    "city": "New York City",
+    "state": "NY",
+    "visited": true,
+    "lat": "40.730610",
+    "lon": "-73.935242"
   },
   {
     "city": "New York City",

@@ -1,40 +1,39 @@
-# travelTracker
+# Travel Tracker
 
 ## Description
 
-Users will be able to track places that you have visited and places you would like to go. It is essentially a virtual push pin travel tracker. 
-
-## Table of Contents (Optional)
-
+Using the Travel Tracker application users will be able to track places that they have visited and places that they would like to go on an interactive map. By logging into their profile, they can access their personal map with their saved locations and can be update and change it as they would like. This is a fun and interactive way to keep track of your travel destinations that we hope travel lovers will enjoy!
 
 
 ## Installation
+This application was deployed using Heroku and can be accessed via the following link:
+https://travel-tracker-msc-0fe902780013.herokuapp.com/
+
+Here is an image of the website in use:
 
 
+From the command line, to run this application, you will need to ensure that you run "npm" in the terminal. Next you will need to seed the database by running "npm run seed". Finally, you can start the server by running "node server.js". Once those steps are complete, you can access the site via the server http://localhost:3001/.
 
 ## Usage
 
-Users must either login in if they already have an account, and also the ability to create an account if not yet a member.Once logged in the user and being generating a list of locations they have visited and places you would like to go and the pins will appear on the map in their profile. 
+When users arrive to the homepage of the website, they will be prompted to sign in if they have an account, or create an account if they do not have one. Once they sign in or create an account, it will take them to their profile where they can begin entering cities into the search bar to add to their map. The cities that are already added are listed below the search bar and can be deleted by clicking the "delete" button. 
 
 ## Credits
 
-Marina Del Conte
-Steve Reuterskiold
-Cynthia Huertas https://github.com/CyndiCodes?tab=repositories
-## License
+Marina Del Conte: https://github.com/marinadelconte 
+Steve Reuterskiold: https://github.com/stevreut
+Cynthia Huertas: https://github.com/CyndiCodes
 
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 ## Features
 
-bing maps
+To create this application we used the Bing Maps API to add the capability to search for locations on the map. We also used node.js, express.js, Handlebars, bcrypt, Tailwind, MySQL, and the Sequelize ORM to work on this project.
 
-## How to Contribute
+## Sources
+
+To work on this project, we utilized the following sources:
+https://handlebarsjs.com/guide/
+https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
+https://tailwindcss.com/docs/container
 
 
-## Tests
