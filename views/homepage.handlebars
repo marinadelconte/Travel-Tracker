@@ -1,6 +1,16 @@
+{{!-- <div>
+     <h2>Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of future travel plans - all on one interactive map!</h2>
+</div>
+{{#each locations as | location |}}
+<p>{{location.city}}</p>
+{{/each}}
+
+<p>{{state}}</p>
+    
+<script src="./js/login.js"></script> --}}
 <div class="home">
   <p>Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of
-    future travel plans - all on one interactive map!</p>
+    future travel plans -all on one interactive map!</p>
   {{#if logged_in}}
   <a href="/profile">profile</a> |
   <button class="no-button" id="logout">logout</button>
