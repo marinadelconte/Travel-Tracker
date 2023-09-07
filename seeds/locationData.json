@@ -4,7 +4,7 @@
     "city": "Philadelphia",
     "state": "PA",
     "visited": true,
-    "lat": "39.952583",
+    "lat": "39.95258",
     "lon": "-75.165222"
   },
   {
@@ -12,14 +12,14 @@
     "city": "Ocean City",
     "state": "NJ",
     "visited": true,
-    "lat": "39.2776156",
+    "lat": "39.277615",
     "lon": "-74.5746001"
   },
   {
     "city": "New York City",
     "state": "NY",
     "visited": true,
-    "lat": "40.730610",
+    "lat": "40.73061",
     "lon": "-73.935242"
   },
   {

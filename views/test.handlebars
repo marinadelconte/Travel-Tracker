@@ -1,60 +1,11 @@
-<!DOCTYPE html>
-<html>
+<link rel="stylesheet" href="/css/test.css">
 
-<!-- Proof of concept -->
-<!-- references <API key from .env> should be replaced with the actual key (Atv...) in order
-     for this to work -->
-
-<head>
-    <title>Bing Maps Demo</title>
-    <meta charset="utf-8" />
-    <style>
-        /* * {
-            padding: 1px;
-            border-style: solid;
-            border-color: red;
-            border-width: 1;
-        } */
-
-        body {
-            background-color: #abc6e1;
-            margin: 50px;
-        }
-
-        #myMap {
-            position: relative;
-            width: 600px;
-            height: 400px;
-            margin: 50px;
-            padding: 20px;
-            border: 10px;
-            border-style: solid;
-            border-radius: 7px;
-            border-width: 10px;
-            border-color: #6d86ac
-        }
-
-        #bigdiv {
-            background-color: #c9c9f9;
-            flex-direction: column;
-            margin: 30px;
-        }
-
-        button {
-            padding: 10px;
-            margin: 30px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div id="bigdiv">
-        <div id="myMap"></div>
-        <div>
-            <p>Latitude: <input type="text" id="lat" /></p>
-            <p>Longitude: <input type="text" id="lon" /></p>
-            <p>Zoom: <select name="zoom" id="zoom">
+<div id="bigdiv">
+    <div id="myMap"></div>
+    <div>
+        <p>Latitude: <input type="text" id="lat" /></p>
+        <p>Longitude: <input type="text" id="lon" /></p>
+        <p>Zoom: <select name="zoom" id="zoom">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -76,30 +27,30 @@
                 <option>19</option>
                 <option>20</option>
             </select></p>
-            <p><button id="doitButton">This is a button</button></p>
-        </div>
-        <div>
-            <h2>pin location</h2>
-            <p>Pin Latitude: <input type="text" id="pinlat" /></p>
-            <p>Pin Longitude: <input type="text" id="pinlon" /></p>
-            <p><button id="setPinButton">Add Pin</button></p>
-        </div>
+        <p><button id="doitButton">This is a button</button></p>
     </div>
+    <div>
+        <h2>pin location</h2>
+        <p>Pin Latitude: <input type="text" id="pinlat" /></p>
+        <p>Pin Longitude: <input type="text" id="pinlon" /></p>
+        <p><button id="setPinButton">Add Pin</button></p>
+    </div>
+</div>
 
 <!-- Per Dane, suggest the following two <script/> segments should be place directly in dashboard handlebars page
-     (except that the API key in both would be rendered via object parameter (e.g. "{{api_key}}" or something like that) -->    
+     (except that the API key in both would be rendered via object parameter (e.g. "{{api_key}}" or something like that) -->
 
-<script type='text/javascript'
-    src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=<API key from .env>'
-    async defer>
-</script>
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AtvPs6MapVPoDsVJuR553m4c6noTwgPBT5l9jeXamUxY9hHqD-XgFtCq2HMBQbYA'
+    >
+    </script>
 
 <script>
     let map = null;
     function GetMap() {
+        console.log("hello")
         map = new Microsoft.Maps.Map('#myMap', {
             // Note: API key here also, so also to be replaced with {{api_key}} or something to that effect
-            credentials: '<API key from .env>',
+            credentials: 'AtvPs6MapVPoDsVJuR553m4c6noTwgPBT5l9jeXamUxY9hHqD-XgFtCq2HMBQbYA',
             center: new Microsoft.Maps.Location(42.899319, -88.989220),  // TODO - SR ancestral home  (remove this comment)
             mapTypeId: Microsoft.Maps.MapTypeId.road,
             zoom: 15
@@ -150,7 +101,7 @@
         if (zoomVar !== null) {
             zoom = zoomVar.value;
         }
-        console.log('lat,loN=(',lat,',',lon,')');
+        console.log('lat,loN=(', lat, ',', lon, ')');
         console.log('zoom = ', zoom)
         map.setView({
             mapTypeId: Microsoft.Maps.MapTypeId.road,
@@ -159,11 +110,11 @@
         });
     }
 
-    function setPin(lat, lon) {
+    function setPin() {
         console.log('PIN button was pressed');
         const pinlat = document.querySelector("#pinlat").value;
         const pinlon = document.querySelector("#pinlon").value;
-        console.log('pin lat,lon=(',lat,',',lon,')');
+        console.log('pin lat,lon=(', lat, ',', lon, ')');
         const pinLoc = new Microsoft.Maps.Location(pinlat, pinlon);
         const pin = new Microsoft.Maps.Pushpin(
             pinLoc,
@@ -175,13 +126,8 @@
         map.entities.push(pin);
     }
 
-    
+
 
 </script>
-</body>
-</html>
 
-<!-- {{#each}} 
-  // get lat lon 
-  setPin(lat, lon)
-{{/each}} -->
+
