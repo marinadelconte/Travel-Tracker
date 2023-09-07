@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Tracker</title>
+  <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  
 </head>
 
 <body>
@@ -29,9 +30,18 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      <p> Travel Trackers LLC &copy;</p>
-    </footer>
+    <footer
+  class="bg-neutral-200 text-center dark:bg-neutral-700 lg:text-left">
+  <div class="p-4 text-center text-neutral-700 dark:text-neutral-200">
+    © 2023
+    <a
+      class="text-neutral-800 dark:text-neutral-400"
+      href="https://tailwind-elements.com/"
+      >Travel Tracker</a
+    >
+  </div>
+</footer>
+
   </div>
 
   <!-- Render script for logged in users only -->
