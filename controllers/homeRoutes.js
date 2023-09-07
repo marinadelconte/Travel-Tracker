@@ -4,6 +4,10 @@ const withAuth = require('../utils/auth');
 
 //update project to location - MD
 
+router.get("/test", async (req, res) => {
+  res.render('test')
+})
+
 router.get('/', async (req, res) => {
   try {
     // Get all locations and JOIN with user data
