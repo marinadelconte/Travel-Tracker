@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="/css/test.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
 <div class="row">
   <div class="col-auto">
     <h2>{{name}}'s Personal Travel Map!</h2>
@@ -16,66 +18,33 @@
       </div>
       <div class="form-group">
       </div>
-            
-         <button id="search-button" type="search" class="btn btn-primary">Search</button>
-        
-      </div>
-    </form>
-  </div>
 
-  {{!-- {{#if location.length}} --}}
-  <div class="col-md-6 location-list">
-    {{!-- <p>Current Cities:</p> --}}
+      <button id="search-button" type="search" class="btn btn-primary">Search</button>
 
-    {{#each locations as |location|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/location/{{location.id}}">{{location.city}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{location.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
   </div>
-  {{!-- {{/if}} --}}
+  </form>
 </div>
 
-<div id="bigdiv">
-        <div id="myMap"></div>
-        <div>
-            <p>Latitude: <input type="text" id="lat" /></p>
-            <p>Longitude: <input type="text" id="lon" /></p>
-            <p>Zoom: <select name="zoom" id="zoom">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option value="12">twelve</option>
-                <option>13</option>
-                <option>fourteen</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-            </select></p>
-            <p><button id="doitButton">This is a button</button></p>
-        </div>
-        <div>
-            <h2>pin location</h2>
-            <p>Pin Latitude: <input type="text" id="pinlat" /></p>
-            <p>Pin Longitude: <input type="text" id="pinlon" /></p>
-            <p><button id="setPinButton">Add Pin</button></p>
-        </div>
+{{!-- {{#if location.length}} --}}
+<div class="col-md-6 location-list">
+  {{!-- <p>Current Cities:</p> --}}
+
+  {{#each locations as |location|}}
+  <div class="row mb-2">
+    <div class="col-md-8">
+      <h4><a href="/location/{{location.id}}">{{location.city}}</a></h4>
     </div>
+    <div class="col-md-4">
+      <button class="btn btn-sm btn-danger" data-id="{{location.id}}">DELETE</button>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{!-- {{/if}} --}}
+</div>
+
+
+  <div id="myMap"></div>
+
 
 <script src="./js/profile.js"></script>
