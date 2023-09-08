@@ -2,8 +2,8 @@
   {
     "user_id": 1,
     "city": "Philadelphia",
-    "state": "PA",
-    "visited": true,
+
+    "visited": false,
     "lat": "39.95258",
     "lon": "-75.165222"
   },
@@ -16,31 +16,195 @@
     "lon": "-74.5746001"
   },
   {
-    "city": "New York City",
+    "user_id": 1,
+    "city": "New York City 1",
     "state": "NY",
     "visited": true,
     "lat": "40.73061",
     "lon": "-73.935242"
   },
   {
-    "city": "New York City",
+    "user_id": 1,
+    "city": "New York City 2",
+    "state": "  ",
+    "visited": true,
+    "lat": "40.730610",
+    "lon": "-73.935242"
+  },
+  {
+    "user_id": 2,
+    "city": "New York City 3 (a bit north)",
+    "state": "NY",
+    "visited": false,
+    "lat": "40.745",
+    "lon": "-73.935242"
+  },
+  {
+    "user_id": 3,
+    "city": "New York City 4",
     "state": "NY",
     "visited": true,
     "lat": "40.730610",
     "lon": "-73.935242"
   },
   {
-    "city": "New York City",
-    "state": "NY",
+    "user_id": 2,
+    "city": "Fort Atkinson",
+    "state": "WI",
     "visited": true,
-    "lat": "40.730610",
-    "lon": "-73.935242"
+    "lat": "42.9376",
+    "lon": "-88.8536"
   },
   {
-    "city": "New York City",
-    "state": "NY",
+    "user_id": 2,
+    "city": "Madison",
+    "state": "WI",
     "visited": true,
-    "lat": "40.730610",
-    "lon": "-73.935242"
+    "lat": "43.0737",
+    "lon": "-89.40819"
+  },
+  {
+    "user_id": 2,
+    "city": "Merritt Island",
+    "state": "FL",
+    "visited": false,
+    "lat": "28.36017",
+    "lon": "-80.6623"
+  },
+  {
+    "user_id": 2,
+    "city": "Cocoa Beach",
+    "state": "FL",
+    "visited": true,
+    "lat": "28.3129",
+    "lon": "-80.61484"
+  },
+  {
+    "user_id": 2,
+    "city": "Lancaster",
+    "state": "CA",
+    "visited": false,
+    "lat": "34.6868",
+    "lon": "-118.1521"
+  },
+  {
+    "user_id": 2,
+    "city": "Canoga Park",
+    "state": "CA",
+    "visited": true,
+    "lat": "34.2308",
+    "lon": "-118.5903"
+  },
+  {
+    "user_id": 2,
+    "city": "Tallahassee",
+    "state": "FL",
+    "visited": true,
+    "lat": "30.4466",
+    "lon": "-84.2765"
+  },
+  {
+    "user_id": 2,
+    "city": "Ardmore",
+    "state": "PA",
+    "visited": false,
+    "lat": "40.0063",
+    "lon": "-75.2923"
+  },
+  {
+    "user_id": 4,
+    "city": "Pad 39B",
+    "state": "FL",
+    "visited": true,
+    "lat": "28.627209",
+    "lon": "-80.620834"
+  },
+  {
+    "user_id": 4,
+    "city": "Pad 39A",
+    "state": "FL",
+    "visited": true,
+    "lat": "28.608303",
+    "lon": "-80.604147"
+  },
+  {
+    "user_id": 4,
+    "city": "Vehicle Assembly Building (VAB)",
+    "state": "FL",
+    "visited": true,
+    "lat": "28.585856",
+    "lon": "-80.650934"
+  },
+  {
+    "user_id": 4,
+    "city": "Crawlerway",
+    "state": "FL",
+    "visited": true,
+    "lat": "28.5947385",
+    "lon": "-80.623903"
+  },
+  {
+    "user_id": 4,
+    "city": "Pad 39 Camera Stand",
+    "state": "FL",
+    "visited": true,
+    "lat": "28.621560",
+    "lon": "-80.607436"
+  },
+  {
+    "user_id": 4,
+    "city": "null lat",
+    "state": "CO",
+    "visited": true,
+    "lat": null,
+    "lon": "-105"
+  },
+  {
+    "user_id": 4,
+    "city": "spaces lat",
+    "state": "CO",
+    "visited": false,
+    "lat": " ",
+    "lon": "-105"
+  },
+  {
+    "user_id": 4,
+    "city": "empty lat",
+    "state": "CO",
+    "visited": true,
+    "lat": "",
+    "lon": "-105"
+  },
+  {
+    "user_id": 4,
+    "city": "padded lat",
+    "state": "CO",
+    "visited": true,
+    "lat": "   40.0 ",
+    "lon": "-105"
+  },
+  {
+    "user_id": 4,
+    "city": "low lat",
+    "state": "CO",
+    "visited": true,
+    "lat": "-90.5",
+    "lon": "-105"
+  },
+  {
+    "user_id": 4,
+    "city": "hi lat",
+    "state": "CO",
+    "visited": true,
+    "lat": "93",
+    "lon": "-105"
+  },
+  {
+    "user_id": 4,
+    "city": "nonnum lat",
+    "state": "CO",
+    "visited": true,
+    "lat": "x25",
+    "lon": "-105"
   }
 ]
