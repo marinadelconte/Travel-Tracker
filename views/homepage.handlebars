@@ -1,23 +1,19 @@
-{{!-- <div>
-     <h2>Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of future travel plans - all on one interactive map!</h2>
-</div>
-{{#each locations as | location |}}
-<p>{{location.city}}</p>
-{{/each}}
-
-<p>{{state}}</p>
-    
-<script src="./js/login.js"></script> --}}
 <div class="home">
   <p>Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of
     future travel plans -all on one interactive map!</p>
   {{#if logged_in}}
-  <a href="/profile">profile</a> |
-  <button class="no-button" id="logout">logout</button>
+  <a href="/profile"><button id="btn btn-primary">Profile</button></a>
+  <a href="/api/logout"><button id="btn btn-primary">Logout</button></a>
   {{else}}
   <a href="/login"><button id="btn btn-primary">Login</button></a>
-   <a href="/login"><button id="btn btn-primary">Sign Up</button></a>
+  <a href="/login"><button id="btn btn-primary">Sign Up</button></a>
   {{/if}}
+
+  <div>
+    <img src="/img/globewithpins.webp" width="80%" class="card-image has-text-centered"/>
+
+  </div>
+ 
 
 
   <script src="./js/login.js"></script>
