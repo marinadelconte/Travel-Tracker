@@ -1,16 +1,17 @@
 <div class="home">
-  <p>Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of
-    future travel plans -all on one interactive map!</p>
+  <div class="block">
+  <p class="is-size-4">Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of
+    future travel plans - all on one interactive map!</p>
+  </div>
   {{#if logged_in}}
-  <a href="/profile"><button id="btn btn-primary">Profile</button></a>
-  <a href="/api/logout"><button id="btn btn-primary">Logout</button></a>
+  <a href="/profile"><button class="button is-medium">Profile</button></a>
+  <a href="/api/logout"><button class="button is-medium">Logout</button></a>
   {{else}}
-  <a href="/login"><button id="btn btn-primary">Login</button></a>
-  <a href="/login"><button id="btn btn-primary">Sign Up</button></a>
+  <a href="/login"><button class="button is-medium">Login</button></a>
+  <a href="/login"><button class="button is-medium">Sign Up</button></a>
   {{/if}}
-
-  <div>
-    <img src="/img/globewithpins.webp" width="80%" class="card-image has-text-centered"/>
+  <div class="is-full">
+    <img src="/img/gettyimages.jpg" width="100%" height="90%" class="is-align-items-center"/>
 
   </div>
  
