@@ -20,9 +20,9 @@ router.get('/js/profile.js', (req, res) => {
       console.log('\n\nerr on read of profile.js **\n\n');
       res.status(400).json(err);
     } else {
-      console.log('\x1b[33mdata from js = ', data, '\x1b[0m');
+      // console.log('\x1b[33mdata from js = ', data, '\x1b[0m');
       scriptContent = data.replace('BING_API_KEY', process.env.BING_API_KEY);
-      console.log('\x1b[33mscriptContent after = ', scriptContent, '\x1b[0m');
+      // console.log('\x1b[33mscriptContent after = ', scriptContent, '\x1b[0m');
       res.setHeader('content-type', 'application/javascript');
       res.status(200).send(scriptContent);
     }
@@ -111,6 +111,17 @@ router.get('/login', (req, res) => {
     return;
   }
 
+  res.render('login', {
+    api_key: process.env.BING_API_KEY
+  });
+});
+
+router.get('/logout', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/login');
+    return;
+  }
   res.render('login', {
     api_key: process.env.BING_API_KEY
   });

@@ -3,7 +3,8 @@
     future travel plans -all on one interactive map!</p>
   {{#if logged_in}}
   <a href="/profile"><button id="btn btn-primary">Profile</button></a>
-  <a href="/api/logout"><button id="btn btn-primary">Logout</button></a>
+  {{!-- <a href="/login"><button id="btn btn-primary logout">Logout</button></a>  {{! id="logout" needed for accessing logout function in login.js}} --}}
+  <a ><button class="btn btn-primary" id="logout">Logout</button></a>  {{! id="logout" needed for accessing logout function in login.js}}
   {{else}}
   <a href="/login"><button id="btn btn-primary">Login</button></a>
   <a href="/login"><button id="btn btn-primary">Sign Up</button></a>
