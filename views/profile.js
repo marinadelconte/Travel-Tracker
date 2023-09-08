@@ -65,9 +65,9 @@ document
   .querySelector('.new-location-form')
   .addEventListener('submit', newFormHandler);
 
-// document
-//   .querySelector('.location-list')
-//   .addEventListener('click', delButtonHandler);
+document
+  .querySelector('.location-list')
+  .addEventListener('click', delButtonHandler);
 
 
 

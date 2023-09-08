@@ -5,17 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Tracker</title>
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
+      <h1 class="navbar-item">
         <a href="/">Travel Tracker</a>
       </h1>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+   
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">     
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
@@ -30,18 +51,10 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer
-  class="bg-neutral-200 text-center dark:bg-neutral-700 lg:text-left">
-  <div class="p-4 text-center text-neutral-700 dark:text-neutral-200">
-    © 2023
-    <a
-      class="text-neutral-800 dark:text-neutral-400"
-      href="https://tailwind-elements.com/"
-      >Travel Tracker</a
-    >
-  </div>
-</footer>
+    <footer>
 
+    </footer>
+  
   </div>
 
   <!-- Render script for logged in users only -->
