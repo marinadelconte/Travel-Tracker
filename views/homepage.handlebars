@@ -5,7 +5,7 @@
   </div>
   {{#if logged_in}}
   <a href="/profile"><button class="button is-medium">Profile</button></a>
-  <a href="/api/logout"><button class="button is-medium">Logout</button></a>
+  <a ><button class="button is-medium" id="logout">Logout</button></a>  {{! id="logout" needed for accessing logout function in login.js}}
   {{else}}
   <a href="/login"><button class="button is-medium">Login</button></a>
   <a href="/login"><button class="button is-medium">Sign Up</button></a>
