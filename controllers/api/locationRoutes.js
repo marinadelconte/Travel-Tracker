@@ -5,9 +5,11 @@ const withAuth = require('../../utils/auth');
 
 
 router.get('/', withAuth, async (req, res) => {
-  console.log("hello");
+  // console.log("hello");
+  console.log('\x1b[33mlocationRoutes get / entry point');
   try {
-    console.log(req.session)
+    console.log('\x1b[33mlocationRoutes get / req.session.user_id = ', req.session.user_id, '\x1b[0m');
+    console.log('\x1b[33mlocationRoutes get / type of req.session.user_id = ', typeof req.session.user_id, '\x1b[0m');
     const locationData = await Location.findAll({
       where: {user_id: req.session.user_id},
       // include: [
@@ -18,6 +20,7 @@ router.get('/', withAuth, async (req, res) => {
       // ],
     });
     // console.log(locationData)
+    console.log('\x1b[33mlocationRoutes get / locationData = ', locationData, '\x1b[0m');
     res.status(200).json(locationData);
   } catch (err) {
     res.status(400).json(err);

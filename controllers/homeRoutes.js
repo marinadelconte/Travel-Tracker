@@ -1,3 +1,5 @@
+const path = require('path');
+const fs = require('fs');
 const router = require('express').Router();
 const { Location, User } = require('../models');
 const withAuth = require('../utils/auth');
@@ -5,8 +7,27 @@ const withAuth = require('../utils/auth');
 //update project to location - MD
 
 router.get("/test", async (req, res) => {
-  res.render('test')
-})
+  res.render('test', {
+    api_key: process.env.BING_API_KEY
+  });
+});
+
+router.get('/js/profile.js', (req, res) => {
+  console.log('\x1b[33m get /js/profile.js ... \x1b[0m');
+  console.log('__dirname = ', __dirname);
+  fs.readFile(path.join(__dirname, '..', 'views', 'profile.js'), 'utf8', function (err, data) {
+    if (err) {
+      console.log('\n\nerr on read of profile.js **\n\n');
+      res.status(400).json(err);
+    } else {
+      console.log('\x1b[33mdata from js = ', data, '\x1b[0m');
+      scriptContent = data.replace('BING_API_KEY', process.env.BING_API_KEY);
+      console.log('\x1b[33mscriptContent after = ', scriptContent, '\x1b[0m');
+      res.setHeader('content-type', 'application/javascript');
+      res.status(200).send(scriptContent);
+    }
+  });
+});
 
 router.get('/', async (req, res) => {
   try {
@@ -23,12 +44,14 @@ router.get('/', async (req, res) => {
     // Serialize data so the template can read it
     const locations = locationData.map((location) => location.get({ plain: true }));
     // const locations = location.get({ plain: true })
-    console.log(locations)
+    // console.log(locations)
+    console.log('\x1b[33mhomeRoutes get / locations = ', locations, '\x1b[0m');
     // Pass serialized data and session flag into template
 
     res.render('homepage', { 
       locations, 
-      logged_in: req.session.logged_in 
+      logged_in: req.session.logged_in, 
+      api_key: process.env.BING_API_KEY
     });
   } catch (err) {
     res.status(500).json(err);
@@ -69,10 +92,12 @@ router.get('/profile', withAuth, async (req, res) => {
       include: [{ model: Location }],
     });
     const user = userData.get({ plain: true });
-    console.log(user)
+    // console.log(user)
+    console.log('\x1b[33mhomeRoutes get /profile user = ', user, '\x1b[0m');
     res.render('profile', {
       ...user,
-      logged_in: true
+      logged_in: true,
+      api_key: process.env.BING_API_KEY
     });
   } catch (err) {
     res.status(500).json(err);
@@ -86,7 +111,9 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('login', {
+    api_key: process.env.BING_API_KEY
+  });
 });
 
 module.exports = router;
