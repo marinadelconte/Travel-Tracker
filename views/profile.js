@@ -109,6 +109,23 @@ function centerMapFromLatLon(ctrLatitude, ctrLongitude, zoom) {
   });
 }
 
+const pinDarkRed = '#B52318'
+const pinBrightRed = '#DF2A25';
+
+const svgPin = 
+`<svg version="1.1"
+width="40" height="50"
+xmlns="http://www.w3.org/2000/svg">
+<circle cx="18" cy="17" r="15" fill="${pinDarkRed}" />
+<circle cx="18" cy="42" r="3" fill="${pinDarkRed}" />
+<polygon points="6 26 15.6 43.8 20.4 40.2 10.8 22.4" fill="${pinDarkRed}" />
+<polygon points="18 45 22 45 20 40" fill="${pinDarkRed}" />
+<circle cx="22" cy="17" r="15" fill="${pinBrightRed}" />
+<circle cx="22" cy="42" r="3" fill="${pinBrightRed}" />
+<polygon points="10 26 19.6 43.8 24.4 43.8 34 26" fill="${pinBrightRed}" />
+<circle cx="22" cy="17" r="7.5" fill="#FFFFFF" />
+</svg>`;
+
 async function setPins() {
   // Fetch the array of locations associated with the current logged-in 
   // user, converting from JSON to an array of Location objects
@@ -182,7 +199,10 @@ async function setPins() {
           //node
           // For now, we just use red for all pins; however, the above line of code would enable color
           // coding of the pins as either red or blue depending on the state of the data[].visited field.
-          color: '#ff0000'
+          // color: '#ff0000',
+          // icon: '/img/pushpin.svg',
+          icon: svgPin,
+          anchor: new Microsoft.Maps.Point(21, 45)
         });
       // Attach newly created pin to the map.
       map.entities.push(pin);
