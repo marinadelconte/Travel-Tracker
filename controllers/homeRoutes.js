@@ -12,17 +12,25 @@ router.get("/test", async (req, res) => {
   });
 });
 
+// When a get request is made for /js/profile.js, that file is read and then dynamically
+// SLIGHTLY altered before sending that altered content to the requestor.  The alteration
+// is the replacement of a literal string with the actual Bing API key.  In all other 
+// respects, the returned content is just as if the file had been returned as-is.
 router.get('/js/profile.js', (req, res) => {
-  console.log('\x1b[33m get /js/profile.js ... \x1b[0m');
-  console.log('__dirname = ', __dirname);
+  // Note that the profile.js file actually resides at views/profile.js rather than in
+  // public/js/profile.js.  This is because the existence of that file in the public folder
+  // was taking precedence over this route, and moving the file resolved that issue.
+  // Having moved the file, the path.join() call below must reflect the *actual* location of the
+  // file; thus the reference to 'views'.  Note, however, that any requesting client can 
+  // continue to function AS IF the file still resides in the public folder.
   fs.readFile(path.join(__dirname, '..', 'views', 'profile.js'), 'utf8', function (err, data) {
     if (err) {
       console.log('\n\nerr on read of profile.js **\n\n');
       res.status(400).json(err);
     } else {
-      // console.log('\x1b[33mdata from js = ', data, '\x1b[0m');
+      // Having successfully retrieved the file's contents, make the replacement below, causing
+      // the actual API key to be in the response rather than the literal 'BING_API_KEY'.
       scriptContent = data.replace('BING_API_KEY', process.env.BING_API_KEY);
-      // console.log('\x1b[33mscriptContent after = ', scriptContent, '\x1b[0m');
       res.setHeader('content-type', 'application/javascript');
       res.status(200).send(scriptContent);
     }
