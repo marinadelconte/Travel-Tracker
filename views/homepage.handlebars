@@ -1,8 +1,6 @@
 <div class="home">
-  <div class="block">
-  <p class="is-size-4">Welcome to the Travel Trackers application, where you can save your past travel destinations and keep track of
-    future travel plans - all on one interactive map!</p>
-  </div>
+  <div class="block" id="home">
+  <p class="is-size-4">Welcome to the Travel Trackers application, where you can save all your past travel destinations on one interactive map!</p>
   {{#if logged_in}}
   <a href="/profile"><button class="button is-medium">Profile</button></a>
   <a ><button class="button is-medium" id="logout">Logout</button></a>  {{! id="logout" needed for accessing logout function in login.js}}
@@ -10,9 +8,9 @@
   <a href="/login"><button class="button is-medium">Login</button></a>
   <a href="/login"><button class="button is-medium">Sign Up</button></a>
   {{/if}}
+  </div>
   <div class="is-full">
-    <img src="/img/gettyimages.jpg" width="100%" height="90%" class="is-align-items-center"/>
-
+    <img src="/img/gettyimages.jpg" width="100%" height="80%" class="globe is-align-items-center"/>
   </div>
  
 

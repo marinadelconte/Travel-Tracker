@@ -4,11 +4,9 @@ body {
 
 }
 #myMap {
-    /* position: relative;
-    top: -300px;
-    float: right; */
-    width: 50%;
-    height: 600px;
+    position: static;
+    width: 100%;
+    height: 500px;
     margin: 50px;
     padding: 20px;
     border: 10px;
@@ -31,4 +29,58 @@ img {
 .flexContainer{
     display: flex;
     justify-content: space-around;
+}
+
+.search {
+    color: rgb(64, 163, 106);
+    font-weight: 400;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.search-input {
+margin-left: 15px;
+margin-bottom: 10px;
+}
+
+#search-button {
+    margin-bottom: 10px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding-left: 15px;
+}
+
+.new-location-form {
+    display: flex;
+        
+}
+
+.profile-header {
+    margin-left: 20px;
+    color: rgb(64, 163, 106);
+    font-weight: 600;
+     
+}
+
+/*targets the logout button on the profile page*/
+#profile-logout {
+    padding: 10px;
+    display: flex;
+    margin-left: 15px;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width: 768px) {
+    #myMap {
+        width: 80%;
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

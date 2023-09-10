@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/css/test.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-<div class="is-size-3">
+<div class="profile-header is-size-3">
   <p>{{name}}'s Personal Travel Map!<p>
 </div>
 <div class="flexContainer">
@@ -12,8 +12,8 @@
 
 
 <div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Search for a Location:</h3>
+  <div>
+    <h3 class="search is-size-5">Search for a Location:</h3>
 
     <form class="form new-location-form">
       <div class="form-group">
@@ -34,7 +34,7 @@
   {{!-- <p>Current Cities:</p> --}}
 
   {{#each locations as |location|}}
-  <div class="row mb-2">
+  <div class="locations row mb-2">
     <div class="col-md-8">
       <h4><a href="/location/{{location.id}}">{{location.city}}</a></h4>
     </div>
@@ -50,6 +50,8 @@
 
 
   </div>
-
+<div>
+  <a ><button class="button is-small" id="profile-logout">Logout</button></a>
+</div>
 
 <script src="./js/profile.js"></script>
