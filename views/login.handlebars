@@ -1,42 +1,49 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
+<div class="columns is-multiline">
+  
+  <div class="login-form">
+    <h2 class="login column is-size-3">Login</h2>
 
-    <form class="form login-form">
+    <form class=" column form login-form">
       <div class="form-group">
-        <label for="email-login">Email:</label>
+        <label class="is-size-5" for="email-login">Email:</label>
         <input class="form-input" type="text" id="email-login" />
       </div>
       <div class="form-group">
-        <label for="password-login">Password:</label>
+        <label class="is-size-5" for="password-login">Password:</label>
         <input class="form-input" type="password" id="password-login" />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">Login</button>
+        <button class="btn btn-primary button is-success is-small is-rounded is-focused" type="submit">Login</button>
       </div>
     </form>
   </div>
-  <div class="col-md-6">
-    <h2>Sign Up</h2>
+  
+    <div class="flex">
+    <div class="signup-form">
+    <h2 class="column is-size-3">Sign Up</h2>
 
-    <form class="form signup-form">
+    <form class="column form signup-form">
       <div class="form-group">
-        <label for="name-signup">Name:</label>
+        <label class="is-size-5" for="name-signup">Name:</label>
         <input class="form-input" type="text" id="name-signup" />
       </div>
       <div class="form-group">
-        <label for="email-signup">Email:</label>
+        <label class="is-size-5" for="email-signup">Email:</label>
         <input class="form-input" type="text" id="email-signup" />
       </div>
       <div class="form-group">
-        <label for="password-signup">Password:</label>
+        <label class="is-size-5" for="password-signup">Password:</label>
         <input class="form-input" type="password" id="password-signup" />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">Sign Up</button>
+        <button class="btn btn-primary button is-success is-small is-rounded is-focused" type="submit">Sign Up</button>
       </div>
     </form>
   </div>
-</div>
+  </div>
+  <figure class="column is-half">
+    <img class="is-rounded" src="/img/gettyimages.jpg"/>
+  </figure>
+  </div>
 
 <script src="./js/login.js"></script>

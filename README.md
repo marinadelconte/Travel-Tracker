@@ -2,7 +2,7 @@
 
 ## Description
 
-Using the Travel Tracker application users will be able to track places that they have visited and places that they would like to go on an interactive map. By logging into their profile, they can access their personal map with their saved locations and can be update and change it as they would like. This is a fun and interactive way to keep track of your travel destinations that we hope travel lovers will enjoy!
+Using the Travel Tracker application users will be able to track places that they have visited on an interactive map. By logging into their profile, they can access their personal map with their saved locations and can be update and change it as they would like. This is a fun and interactive way to keep track of your travel destinations that we hope travel lovers will enjoy!
 
 
 ## Installation
@@ -27,13 +27,13 @@ Cynthia Huertas: https://github.com/CyndiCodes
 
 ## Features
 
-To create this application we used the Bing Maps API to add the capability to search for locations on the map. We also used node.js, express.js, Handlebars, bcrypt, Tailwind, MySQL, and the Sequelize ORM to work on this project.
+To create this application we used the Bing Maps API to add the capability to search for locations on the map. We also used node.js, express.js, Handlebars, bcrypt, Bulma, MySQL, and the Sequelize ORM to work on this project.
 
 ## Sources
 
 To work on this project, we utilized the following sources:
 https://handlebarsjs.com/guide/
 https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
-https://tailwindcss.com/docs/container
+https://bulma.io/documentation/ 
 
 

@@ -1,14 +1,8 @@
-body {
-    /* background-color: aqua; */
 
-
-}
 #myMap {
-    /* position: relative;
-    top: -300px;
-    float: right; */
-    width: 50%;
-    height: 600px;
+    position: static;
+    width: 100%;
+    height: 500px;
     margin: 50px;
     padding: 20px;
     border: 10px;
@@ -17,18 +11,70 @@ body {
     border-width: 4px;
 }
 
-#bigdiv {
+/* #bigdiv {
     background-color: #c9c9f9;
     flex-direction: column;
-    margin: 10px;
-}
-
-img {
-    padding-top: 0;
-    margin-top: 0;
-}
+    margin: 10px; */
+    
 
 .flexContainer{
     display: flex;
     justify-content: space-around;
 }
+
+/*targets the text that corresponds with the search bar on the profile page*/
+.search {
+    color: rgb(64, 163, 106);
+    font-weight: 400;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.search-input {
+margin-left: 15px;
+margin-bottom: 10px;
+}
+
+#search-button {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding-left: 15px;
+}
+
+.new-location-form {
+    display: flex;   
+}
+
+/*targets the header on the profile page*/
+.profile-header {
+    margin-left: 20px;
+    color: rgb(64, 163, 106);
+    font-weight: 600;
+     
+}
+
+/*targets the logout button on the profile page*/
+.logout-btn {
+    padding: 10px;
+    display: flex;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+/*adjusts map size and layout to adjust for multiple page sizes*/
+@media screen and (max-width: 768px) {
+    #myMap {
+        width: 80%;
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
