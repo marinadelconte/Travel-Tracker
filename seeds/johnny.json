@@ -1,197 +1,5 @@
 [
   {
-    "user_id": 1,
-    "city": "Philadelphia",
-
-    "visited": false,
-    "lat": "39.95258",
-    "lon": "-75.165222"
-  },
-  {
-    "user_id": 1,
-    "city": "Ocean City",
-    "state": "NJ",
-    "visited": true,
-    "lat": "39.277615",
-    "lon": "-74.5746001"
-  },
-  {
-    "user_id": 1,
-    "city": "New York City 1",
-    "state": "NY",
-    "visited": true,
-    "lat": "40.73061",
-    "lon": "-73.935242"
-  },
-  {
-    "user_id": 1,
-    "city": "New York City 2",
-    "state": "  ",
-    "visited": true,
-    "lat": "40.730610",
-    "lon": "-73.935242"
-  },
-  {
-    "user_id": 3,
-    "city": "New York City 4",
-    "state": "NY",
-    "visited": true,
-    "lat": "40.730610",
-    "lon": "-73.935242"
-  },
-  {
-    "user_id": 2,
-    "city": "Fort Atkinson",
-    "state": "WI",
-    "visited": true,
-    "lat": "42.9376",
-    "lon": "-88.8536"
-  },
-  {
-    "user_id": 2,
-    "city": "Madison",
-    "state": "WI",
-    "visited": true,
-    "lat": "43.0737",
-    "lon": "-89.40819"
-  },
-  {
-    "user_id": 2,
-    "city": "Merritt Island",
-    "state": "FL",
-    "visited": false,
-    "lat": "28.36017",
-    "lon": "-80.6623"
-  },
-  {
-    "user_id": 2,
-    "city": "Cocoa Beach",
-    "state": "FL",
-    "visited": true,
-    "lat": "28.3129",
-    "lon": "-80.61484"
-  },
-  {
-    "user_id": 2,
-    "city": "Lancaster",
-    "state": "CA",
-    "visited": false,
-    "lat": "34.6868",
-    "lon": "-118.1521"
-  },
-  {
-    "user_id": 2,
-    "city": "Tallahassee",
-    "state": "FL",
-    "visited": true,
-    "lat": "30.4466",
-    "lon": "-84.2765"
-  },
-  {
-    "user_id": 2,
-    "city": "Ardmore",
-    "state": "PA",
-    "visited": false,
-    "lat": "40.0063",
-    "lon": "-75.2923"
-  },
-  {
-    "user_id": 4,
-    "city": "Pad 39B",
-    "state": "FL",
-    "visited": true,
-    "lat": "28.627209",
-    "lon": "-80.620834"
-  },
-  {
-    "user_id": 4,
-    "city": "Pad 39A",
-    "state": "FL",
-    "visited": true,
-    "lat": "28.608303",
-    "lon": "-80.604147"
-  },
-  {
-    "user_id": 4,
-    "city": "Vehicle Assembly Building (VAB)",
-    "state": "FL",
-    "visited": true,
-    "lat": "28.585856",
-    "lon": "-80.650934"
-  },
-  {
-    "user_id": 4,
-    "city": "Crawlerway",
-    "state": "FL",
-    "visited": true,
-    "lat": "28.5947385",
-    "lon": "-80.623903"
-  },
-  {
-    "user_id": 4,
-    "city": "Pad 39 Camera Stand",
-    "state": "FL",
-    "visited": true,
-    "lat": "28.621560",
-    "lon": "-80.607436"
-  },
-  {
-    "user_id": 4,
-    "city": "null lat",
-    "state": "CO",
-    "visited": true,
-    "lat": null,
-    "lon": "-105"
-  },
-  {
-    "user_id": 4,
-    "city": "spaces lat",
-    "state": "CO",
-    "visited": false,
-    "lat": " ",
-    "lon": "-105"
-  },
-  {
-    "user_id": 4,
-    "city": "empty lat",
-    "state": "CO",
-    "visited": true,
-    "lat": "",
-    "lon": "-105"
-  },
-  {
-    "user_id": 4,
-    "city": "padded lat",
-    "state": "CO",
-    "visited": true,
-    "lat": "   40.0 ",
-    "lon": "-105"
-  },
-  {
-    "user_id": 4,
-    "city": "low lat",
-    "state": "CO",
-    "visited": true,
-    "lat": "-90.5",
-    "lon": "-105"
-  },
-  {
-    "user_id": 4,
-    "city": "hi lat",
-    "state": "CO",
-    "visited": true,
-    "lat": "93",
-    "lon": "-105"
-  },
-  {
-    "user_id": 4,
-    "city": "nonnum lat",
-    "state": "CO",
-    "visited": true,
-    "lat": "x25",
-    "lon": "-105"
-  },
-  {
     "user_id": 5,
     "city": "Winnemucca",
     "state": "Nevada",
@@ -289,11 +97,11 @@
   },
   {
     "user_id": 5,
-    "city": "Oklahoma City",
-    "state": "Oklahoma",
+    "city": "Oklahoma",
+    "state": "Pennsylvania",
     "visited": true,
-    "lat": 35.4922387,
-    "lon":  -97.5030764
+    "lat": 40.5814403,
+    "lon": -79.5740244
   },
   {
     "user_id": 5,
@@ -322,10 +130,10 @@
   {
     "user_id": 5,
     "city": "La Paloma",
-    "state": "Texas",
+    "state": "Rocha",
     "visited": true,
-    "lat": 26.0486693,
-    "lon": -97.6676233
+    "lat": -34.6631811,
+    "lon": -54.155092
   },
   {
     "user_id": 5,
@@ -346,7 +154,7 @@
   {
     "user_id": 5,
     "city": "Salvador",
-    "state": "Brazil",
+    "state": "Bahia",
     "visited": true,
     "lat": -12.9822499,
     "lon": -38.4812772
@@ -361,16 +169,8 @@
   },
   {
     "user_id": 5,
-    "city": "Tocapilla",
-    "state": "Chile",
-    "visited": true,
-    "lat": -22.0889259,
-    "lon":  -70.195847
-  },
-  {
-    "user_id": 5,
     "city": "Baranquilla",
-    "state": "Panamá",
+    "state": "Ngäbe-Buglé",
     "visited": true,
     "lat": 8.921018,
     "lon": -82.2035556
@@ -401,11 +201,11 @@
   },
   {
     "user_id": 5,
-    "city": "Baton Rouge",
-    "state": "Louisiana",
+    "city": "Louisiana",
+    "state": "Missouri",
     "visited": true,
-    "lat": 30.457074181339983,
-    "lon":  -91.18729371432171
+    "lat": 39.4492151,
+    "lon": -91.0465742
   },
   {
     "user_id": 5,
@@ -497,19 +297,11 @@
   },
   {
     "user_id": 5,
-    "city": "Nashville",
-    "state": "Tennessee",
+    "city": "Tennessee",
+    "state": "Illinois",
     "visited": true,
-    "lat": 36.16577551821698,
-    "lon":  -86.78423816365948
-  },
-  {
-    "user_id": 5,
-    "city": "Chicopee",
-    "state": "Massachusetts",
-    "visited": true,
-    "lat": 42.1489307,
-    "lon": -72.6078162
+    "lat": 40.4124541,
+    "lon": -90.8368406
   },
   {
     "user_id": 5,
@@ -537,11 +329,11 @@
   },
   {
     "user_id": 5,
-    "city": "Crater Lake",
-    "state": "Oregon",
+    "city": "Crater Lake Trading Centre( Duro)",
+    "state": "Nakuru",
     "visited": true,
-    "lat": 42.9444550,
-    "lon":  -122.1073536
+    "lat": -0.7597656,
+    "lon": 36.2353727
   },
   {
     "user_id": 5,
@@ -642,10 +434,10 @@
   {
     "user_id": 5,
     "city": "Cadillac",
-    "state": "Michigan",
+    "state": "Nouvelle-Aquitaine",
     "visited": true,
-    "lat": 44.2505299,
-    "lon":  -85.3998768
+    "lat": 44.6360817,
+    "lon": -0.3173533
   },
   {
     "user_id": 5,
@@ -665,11 +457,11 @@
   },
   {
     "user_id": 5,
-    "city": "Boise",
-    "state": "Idaho",
+    "city": "Idaho",
+    "state": "Dodoma Region",
     "visited": true,
-    "lat": 43.61774952,
-    "lon":  -116.1996887
+    "lat": -6.7691775,
+    "lon": 36.5943672
   },
   {
     "user_id": 5,
@@ -690,7 +482,7 @@
   {
     "user_id": 5,
     "city": "Diamantina",
-    "state": "Brazil",
+    "state": "Minas Gerais",
     "visited": true,
     "lat": -18.2440862,
     "lon": -43.6006487
@@ -705,11 +497,11 @@
   },
   {
     "user_id": 5,
-    "city": "Catalina Island",
-    "state": "California",
+    "city": "Catalina",
+    "state": "Arizona",
     "visited": true,
-    "lat": 33.3766576,
-    "lon":  -118.4291940
+    "lat": 32.482131,
+    "lon": -110.90019740489195
   },
   {
     "user_id": 5,
@@ -726,14 +518,6 @@
     "visited": true,
     "lat": 39.2699565,
     "lon": -81.5506916
-  },
-  {
-    "user_id": 5,
-    "city": "Gravelbourg",
-    "state": "Saskatchewan",
-    "visited": true,
-    "lat": 49.8755479,
-    "lon": -106.5572809
   },
   {
     "user_id": 5,
@@ -817,19 +601,19 @@
   },
   {
     "user_id": 5,
-    "city": "Lincoln",
-    "state": "Nebraska",
+    "city": "Nebraska",
+    "state": "Pennsylvania",
     "visited": true,
-    "lat": 40.80807060,
-    "lon":  -96.6997165
+    "lat": 41.5242483,
+    "lon": -75.5371298
   },
   {
     "user_id": 5,
-    "city": "Fairbanks",
-    "state": "Alaska",
+    "city": "Alaska",
+    "state": "Prince Edward Island",
     "visited": true,
-    "lat": 64.842700,
-    "lon":  -147.725838
+    "lat": 46.6174128,
+    "lon": -64.1090125
   },
   {
     "user_id": 5,

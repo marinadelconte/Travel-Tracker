@@ -6,12 +6,6 @@ const withAuth = require('../utils/auth');
 
 //update project to location - MD
 
-router.get("/test", async (req, res) => {
-  res.render('test', {
-    api_key: process.env.BING_API_KEY
-  });
-});
-
 // When a get request is made for /js/profile.js, that file is read and then dynamically
 // SLIGHTLY altered before sending that altered content to the requestor.  The alteration
 // is the replacement of a literal string with the actual Bing API key.  In all other 
@@ -67,7 +61,6 @@ router.get('/', async (req, res) => {
 });
 
 // get location by id/ doesnt work/ commenting out and will remove if not needed- cyndi
-
 // router.get('/location/:id', async (req, res) => {
 //   try {
 //     const locationData = await Location.findByPk(req.params.id, {
@@ -78,9 +71,7 @@ router.get('/', async (req, res) => {
 //         },
 //       ],
 //     });
-
 //     const location = locationData.get({ plain: true });
-
 //     res.render('profile', {
 //       ...location,
 //       logged_in: req.session.logged_in

@@ -22,5 +22,11 @@
     "name": "Local traveller",
     "email": "stayshome@hotmail.com",
     "password": "password12345"
+  },
+  {
+    "id": 5,
+    "name": "Johnny Cash",
+    "email": "maninblack@aol.com",
+    "password": "password12345"
   }
 ]  
