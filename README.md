@@ -10,6 +10,8 @@ This application was deployed using Heroku and can be accessed via the following
 https://travel-tracker-msc-0fe902780013.herokuapp.com/
 
 Here is an image of the website in use:
+![image](https://github.com/marinadelconte/Project-2/assets/137957098/8d49bd57-5338-4e9d-908c-2fd955f67008)
+
 
 
 From the command line, to run this application, you will need to ensure that you run "npm" in the terminal. Next you will need to seed the database by running "npm run seed". Finally, you can start the server by running "node server.js". Once those steps are complete, you can access the site via the server http://localhost:3001/.
