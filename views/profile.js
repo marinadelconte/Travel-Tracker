@@ -86,7 +86,7 @@ const fetchLocations = async () => {
 function GetMap() {
   // CAREFUL!:  This file is NOT returned to the requesting client unaltered when a get is 
   // sent to the /js/profile.js URL path.  Rather, the server will dynamically alter the
-  // contents of this file, replacing the reference to BING_API_KEY below with the actual
+  // contents of this file, replacing the reference to BING_API_... below with the actual
   // API key.  In all other respects, though, the returned file is unaltered.
   map = new Microsoft.Maps.Map('#myMap', {
     credentials: 'BING_API_KEY',  // note replacement of this content by /js/profile.js route
