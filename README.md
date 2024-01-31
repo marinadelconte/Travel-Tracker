@@ -2,7 +2,7 @@
 
 ## Description
 
-Using the Travel Tracker application users will be able to track places that they have visited on an interactive map. By logging into their profile, they can access their personal map with their saved locations and can be update and change it as they would like. This is a fun and interactive way to keep track of your travel destinations that we hope travel lovers will enjoy! a
+Using the Travel Tracker application users will be able to track places that they have visited on an interactive map. By logging into their profile, they can access their personal map with their saved locations and can be update and change it as they would like. This is a fun and interactive way to keep track of your travel destinations that we hope travel lovers will enjoy!
 
 
 ## Installation
