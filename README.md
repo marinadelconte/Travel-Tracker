@@ -21,8 +21,10 @@ When users arrive to the homepage of the website, they will be prompted to sign 
 
 ## Credits
 
-Marina Del Conte: https://github.com/marinadelconte 
+Marina Del Conte: https://github.com/marinadelconte
+
 Steve Reuterskiold: https://github.com/stevreut
+
 Cynthia Huertas: https://github.com/CyndiCodes
 
 
@@ -33,8 +35,11 @@ To create this application we used the Bing Maps API to add the capability to se
 ## Sources
 
 To work on this project, we utilized the following sources:
+
 https://handlebarsjs.com/guide/
+
 https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
+
 https://bulma.io/documentation/ 
 
 
