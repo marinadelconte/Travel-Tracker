@@ -4,12 +4,7 @@ const router = require('express').Router();
 const { Location, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-//update project to location - MD
 
-// When a get request is made for /js/profile.js, that file is read and then dynamically
-// SLIGHTLY altered before sending that altered content to the requestor.  The alteration
-// is the replacement of a literal string with the actual Bing API key.  In all other 
-// respects, the returned content is just as if the file had been returned as-is.
 router.get('/js/profile.js', (req, res) => {
   // Note that the profile.js file actually resides at views/profile.js rather than in
   // public/js/profile.js.  This is because the existence of that file in the public folder
@@ -59,27 +54,6 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-// get location by id/ doesnt work/ commenting out and will remove if not needed- cyndi
-// router.get('/location/:id', async (req, res) => {
-//   try {
-//     const locationData = await Location.findByPk(req.params.id, {
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
-//     const location = locationData.get({ plain: true });
-//     res.render('profile', {
-//       ...location,
-//       logged_in: req.session.logged_in
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 
 // Use withAuth middleware to prevent access to route
 

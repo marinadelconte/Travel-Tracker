@@ -10,6 +10,7 @@ This application was deployed using Heroku and can be accessed via the following
 https://travel-tracker-msc-0fe902780013.herokuapp.com/
 
 Here is an image of the website in use:
+
 ![image](https://github.com/marinadelconte/Project-2/assets/137957098/8d49bd57-5338-4e9d-908c-2fd955f67008)
 
 
