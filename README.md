@@ -2,7 +2,7 @@
 
 ## Description
 
-Using the Travel Tracker application users will be able to track places that they have visited on an interactive map. By logging into their profile, they can access their personal map with their saved locations and can be update and change it as they would like. This is a fun and interactive way to keep track of your travel destinations that we hope travel lovers will enjoy!
+Using the Travel Tracker application users will be able to track places that they have visited on an interactive map. By logging into their profile, they can access their personal map with their saved locations and can be update and change it as they would like. This is a fun and interactive way to keep track of your travel destinations that we hope travel lovers will enjoy! a
 
 
 ## Installation
@@ -11,7 +11,6 @@ https://travel-tracker-msc-0fe902780013.herokuapp.com/
 
 Here is an image of the website in use:
 ![image](https://github.com/marinadelconte/Project-2/assets/137957098/8d49bd57-5338-4e9d-908c-2fd955f67008)
-
 
 
 From the command line, to run this application, you will need to ensure that you run "npm" in the terminal. Next you will need to seed the database by running "npm run seed". Finally, you can start the server by running "node server.js". Once those steps are complete, you can access the site via the server http://localhost:3001/.
