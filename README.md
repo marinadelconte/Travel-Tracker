@@ -30,7 +30,7 @@ Cynthia Huertas: https://github.com/CyndiCodes
 
 ## Features
 
-To create this application we used the Bing Maps API to add the capability to search for locations on the map. We also used node.js, express.js, Handlebars, bcrypt, Bulma, MySQL, and the Sequelize ORM to work on this project.
+To create this application we used JavaScript, CSS, HTML, node.js, express.js, Handlebars, bcrypt, Bulma, MySQL, and the Sequelize ORM. We used the Bing Maps API to add the capability to search for locations on the map.
 
 ## Sources
 
