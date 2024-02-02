@@ -1,5 +1,15 @@
 main {
-    margin: 20px;
+    margin: 5px;
+}
+
+img {
+    max-height: 750px;
+    max-width: 800px;
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 #myMap {
@@ -56,6 +66,17 @@ margin-bottom: 10px;
      
 }
 
+/*targets login button on login/sign up page*/
+.login-btn {
+    margin-top: 10px;
+}
+
+/*targets Sign Up button on login/sign up page*/
+.signup-btn {
+    margin-top: 10px;
+}
+
+
 /*targets the logout button on the profile page*/
 .logout-btn {
     padding: 10px;
@@ -64,8 +85,19 @@ margin-bottom: 10px;
     font-weight: 500;
 }
 
+.input {
+padding: 10px;
+margin: 4px;
+}
+
+
+
 /*adjusts map size and layout to adjust for multiple page sizes*/
 @media screen and (max-width: 768px) {
+    img {
+    height: 400px;
+    width: 400px;
+    }
     #myMap {
         width: 80%;
     }
@@ -75,3 +107,16 @@ margin-bottom: 10px;
     }
 }
 
+@media screen and (max-width: 540px) {
+    img {
+        height: 400px;
+        width: 400px;
+        }
+    #myMap {
+        width: 80%;
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

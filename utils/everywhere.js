@@ -58,19 +58,3 @@ const reformatCities = async () => {
 }
 
 reformatCities();
-
-// const cityInfoResponse = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=ae43fce93221a7479e25011f753d1c95`)
-// .then((response) => {
-//   console.log(response)
-
-//   return response.json()
-// })
-// .then(async (cityData) => {
-     
-//     const response = await fetch(`/api/locations`, {
-//     method: 'POST',
-//     body: JSON.stringify({ city, state: cityData[0].state, lat: cityData[0].lat, lon: cityData[0].lon  }),
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//   });
