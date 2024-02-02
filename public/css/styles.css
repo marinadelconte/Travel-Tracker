@@ -62,13 +62,17 @@ margin-bottom: 10px;
 .profile-header {
     margin-left: 20px;
     color: rgb(64, 163, 106);
-    font-weight: 600;
-     
+    font-weight: 600;   
 }
 
 /*targets login button on login/sign up page*/
 .login-btn {
     margin-top: 10px;
+}
+
+/*targets the login form on login/sign up page*/
+.login-form {
+   padding-left: 15px;
 }
 
 /*targets Sign Up button on login/sign up page*/
@@ -89,7 +93,6 @@ margin-bottom: 10px;
 padding: 10px;
 margin: 4px;
 }
-
 
 
 /*adjusts map size and layout to adjust for multiple page sizes*/

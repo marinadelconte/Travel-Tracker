@@ -7,6 +7,12 @@ Using the Travel Tracker application users will be able to track places that the
 
 ## Installation
 This application was deployed using Heroku and can be accessed via the following link:
+https://travel-tracker-572dbea70c8c.herokuapp.com/
+
+Below are images of the application in use:
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
 
 
 ## Usage
