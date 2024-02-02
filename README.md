@@ -14,7 +14,6 @@ Below are images of the application in use:
 
 ![Alt text](image-2.png)
 
-
 ## Usage
 
 When users arrive to the homepage of the website, they will be prompted to sign in if they have an account, or create an account if they do not have one. Once they sign in or create an account, it will take them to their profile where they can begin entering cities into the search bar to add to their map. The cities that are already added are listed below the search bar and can be deleted by clicking the "delete" button. 
